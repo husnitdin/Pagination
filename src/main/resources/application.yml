@@ -1,0 +1,15 @@
+server:
+  port: 1203
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 123
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/pagination
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+    show-sql: true
+
+server.error.include-message: always
